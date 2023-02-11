@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+t 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous"/>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+  <div class="container">
+    <div class="title">Add Task</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Select company</span>
+            <!-- <label for="Select company">Select a company</label> -->
+              <select name ="Select country" id="Selectcompany">
+                <option value ="Amazon">Amazon</option>
+                <option value ="Flipcart">flipcart</option>
+                <option value ="Delithe">Delithe</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Type</span>
+            <select name ="Select country" id="SelectProject">
+              <option value ="Project">Project</option>
+              <option value ="Task">Task</option>
+              <option value ="Bug">Bug</option>
+          </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Title</span>
+            <input type="text" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Assign to</span>
+            <select name ="Select country" id="SelectAssign">
+              <!-- Option with profile image with first to letters of name -->
+              <option value ="Jenny Wilson">Jenny Wilson</option>
+              <option value ="Arthur">Arthur</option>
+              <option value ="John">John</option>
+              <option value ="Raj">Raj</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Report to</span>
+            <select name ="Select country" id="SelectReport">
+              <!-- Option with profile image with first to letters of name -->
+              <option value ="Jenny Wilson">Assign to me</option>
+              <option value ="Arthur">Arthur</option>
+              <option value ="John">John</option>
+              <option value ="Raj">Raj</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Related task</span>
+            <select name ="Select country" id="SelectRelated">
+              <!-- Option with profile image with first to letters of name -->
+              <option value ="Related task 1">Related task 1</option>
+              <option value ="Related task 2">Related task 2</option>
+              <option value ="Related task 3">Related task 3</option>
+              <option value ="Related task 4">Related task 4</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Start date</span>
+           <!-- input date with not having past dates -->
+
+            <input type="date" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Due date</span>
+            <!-- only future dates can be selected -->
+            <input type="date" placeholder="" start="2021-01-01" required>
+            
+          </div>
+          <div class="input-box">
+            <span class="details">Start time</span>
+            <!-- time selector -->
+            <input type="time" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Due time</span>
+            <!-- time selector select current time by default and be disabled -->
+            <input type="time" placeholder="" required disabled>
+          </div>
+        </div>
+       </div>
+       <label for="message_area">Description</label>
+       <p>
+        <textarea id="message_area" maxlength="250" rows="6" cols="100" placeholder="Description test">
+        </textarea>
+       </p>
+        <div class="button">
+           <!-- unordered list -->
+          
+          <ul id="emergency">
+            <li id="emergency" for="Emergency"><input type="radio" name="radio" value="1" id="Emergency" ><label for="Emergency" id="e">Emergency</label></li>
+          
+            <li id="high" for="High"><input type="radio" name="radio" value="2" id="High" ><label for="High" id="h">High</label></li>
+            <li id="mid" for="Mid"><input type="radio" name="radio" value="3" id="Medium"><label for="Medium" id="m">Medium</label></li>
+            <li id="low" for="Low"><input type="radio" name="radio" value="4" id="Low" ><label for="Low" id="l">Low</label></li>
+           
+          </ul>
+        </div>
+        <div class="markcrictical">
+        <input type="checkbox" id="critical"><span id="ilabe" for="critical">Mark as Critical</span></div>
+        <div class="fileinp">
+          <i class="fas fa-paperclip"></i>
+          <input type="file"  id="file" name="file" hidden>
+          <label for="file" id="filelabel" >Attach File</label>
+        </div>
+        <input type="button" value="Back" onclick="history.back()">
+        <button type="submit" class="btn" onclick="openPopup()">Add</button>
+        <div class="popup" id="popup">
+          
+          
+          <p>Your task has been successfully added</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+<script>
+  let popup=document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+</div>
+<script>
+  document.getElementById("")
+</script>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
